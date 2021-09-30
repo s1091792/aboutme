@@ -9,15 +9,18 @@
 	<style type="text/css">
 
 		* {
-			font-family: "標楷體";
+			font-family: "源泉圓體";
 		}
 
 		header {
 			font-size: 36px;
-			color: #55ff55;
+			color: #ffd700;
 		}
 
 	</style>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
 
@@ -31,7 +34,7 @@
 			</ul>
 		</nav>
 
-		<main>
+		<main class="container-fluid bg-dark text-white text-center">
 
 			<nav>
 				<h1><a href="http://www1.pu.edu.tw/~s1091792/cat.jpg">麟伯君</a></h1>
@@ -43,29 +46,38 @@
 			<img src="owow.jpg" alt="照片">
 			<br><br><br> 
 
-			<session id="aboutme">
+			<div class="row">
 
-				<header>關於我</header>
-				<h3>職稱：靜宜大學資訊管理學系副教授</h3>
-				<h3>經歷：靜宜大學服務學習發展中心兼產業學院推動辦公室主任(2012年8月～2015年8月)</h3>
-				<h3><a href="tel: 04-26328001,18110">04-26328001#18110</a></h3>
-				<h3><a href="mailto: s1091792@gm.pu.edu.tw">s1091792@gm.pu.edu.tw</a></h3>
-			</session>
+				<session id="aboutme" class="col-lg-4">
 
-			<hr>
+					<header>關於我</header>
+					<h3>職稱：靜宜大學資訊管理學系二年B班班代</h3>
+					<h3>經歷：靜宜大學資訊管理學系一年B班總務(2020年9月～2021年1月)</h3>
+					<br>
+					<h3><a href="tel: 04-26328001,18110">04-26328001#18110</a></h3>
+					<h3><a href="mailto: s1091792@gm.pu.edu.tw">s1091792@gm.pu.edu.tw</a></h3>
+				</session>
 
-			<artical id="bookmark">
-				<header>珍藏書籤</header>
-				<h3>生命中的每一剎時間</h3>
-				<h3>都是向永恆借來的片羽</h3>
-				<h3>胸襟中的每一縷柔情</h3>
-				<h3>都是無限天機所流瀉的微光</h3>
-			</artical>
+				
 
-			<aside id="youtube">
-				<header>推薦影片</header>
-				<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
-			</aside>
+				<artical id="bookmark" class="col-lg-4">
+					<header>珍藏書籤</header>
+					<h3>生命中的每一剎時間</h3>
+					<h3>都是向永恆借來的片羽</h3>
+					<h3>胸襟中的每一縷柔情</h3>
+					<h3>都是無限天機所流瀉的微光</h3>
+				</artical>
+
+
+
+				<aside id="youtube" class="col-lg-4">
+					<header>推薦影片</header>
+					<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+				</aside>
+
+			</div>
+			<br><br>
+
 
 			<footer>
 				Copyright ©  琳駁君. All Rights Reserved.
