@@ -27,6 +27,41 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<script>
+
+		$(document).ready(function(){
+
+			$("#I").hover(function(){
+
+				$("#PICTURE").attr("src","owow.jpg");
+
+			});
+
+			$("#PU").hover(function(){
+
+				$("#PICTURE").attr("src","ow1.jpg");
+
+			});
+
+			$("#CSIM").hover(function(){
+
+				$("#PICTURE").attr("src","ow2.jpg");
+
+			});
+
+			$("#PICTURE").click(function(){
+
+				$("#PICTURE").hide();
+
+				$("#PICTURE").fadeIn("slow")
+
+			});
+
+		});
+
+	</script>
+
+
 </head>
 
 <body>
@@ -55,16 +90,16 @@
 
 			<nav>
 				<h1><a href="http://www1.pu.edu.tw/~s1091792/cat.jpg" 
-					class="text-reset text-decoration-none text-white bg-info">麟伯君</a></h1>
+					class="text-reset text-decoration-none text-white bg-info" target="_blank" id="I">麟伯君</a></h1>
 				<h2><a href="https://www.pu.edu.tw/" 
-					class="text-reset text-decoration-none text-white bg-info">靜宜大學</a> 
+					class="text-reset text-decoration-none text-white bg-info" id="PU">靜宜大學</a> 
 				 / <a href="https://csim.pu.edu.tw/"
-				 	class="text-reset text-decoration-none text-white bg-info">資訊管理學系</a> </h2>
+				 	class="text-reset text-decoration-none text-white bg-info" id="CSIM">資訊管理學系</a> </h2>
 			</nav> 	
 
 			<br>
 
-			<img src="owow.jpg" alt="照片" class="img-fluid rounded-circle">
+			<img src="owow.jpg" alt="照片" class="img-fluid rounded-circle" id="PICTURE">
 			<br><br><br><br> 
 
 			<div class="row">
